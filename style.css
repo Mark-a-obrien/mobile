@@ -10,7 +10,7 @@ body {
 }
 
 h1 {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
 }
 
 p {
@@ -23,7 +23,7 @@ p {
 header {
     display: flex;
     align-items: center;
-    gap: 28%;
+    justify-content: space-between;
     margin-top: 2%;
     
 }
@@ -35,12 +35,61 @@ header .tool {
 /* content */
 
 .content {
-    margin-top: 5%;
+    margin-top: 6%;
+    display: flex;
+    gap: 6%;
 }
 
-.content .character {
-    border: 2px solid white;
+.content .img-container {
+    border: 3px solid white;
     width:45%;
     height: 150px;
 }
 
+.content .attributes p {
+    font-size: 0.8rem;
+}
+
+
+/* progress-bar */
+
+.progress-bar{
+    margin-top: 2px;
+    margin-bottom: 15px;
+    border-radius: 30px 30px 30px 30px;
+    background-color: grey; 
+    width: 130px;
+    height: 8px;
+    padding: 3px;
+}
+
+.progress-bar .forground-clr {
+    border-radius: 30px 30px 30px 30px;
+    background-color: rgb(95, 200, 69);
+    width:20px;
+    height: 8px;
+}
+
+
+/* quests */
+
+.quests {
+    margin-top: 15%;
+}
+
+.quests .card {
+    margin-top: 10px;
+    border-radius: 10px 10px 10px 10px;
+    background-color: rgb(218, 218, 218);
+    width: 70%;
+    height: 35px;
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quests .card p{
+    color: grey;
+    font-size: 0.8rem;
+}
